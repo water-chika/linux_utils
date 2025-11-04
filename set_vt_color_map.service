@@ -1,0 +1,11 @@
+[Unit]
+Description=set vt color map
+After=multi-user.target
+Wants=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/set_vt_color_map
+
+[Install]
+WantedBy=multi-user.target
